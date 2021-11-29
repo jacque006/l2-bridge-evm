@@ -1,0 +1,49 @@
+{
+  "name": "l2-bridge-evm",
+  "version": "0.0.1",
+  "description": "Prototype/MVE implementation of https://notes.ethereum.org/@vbuterin/cross_layer_2_bridges",
+  "main": "index.js",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacque006/l2-bridge-evm.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jacque006/l2-bridge-evm/issues"
+  },
+  "homepage": "https://github.com/jacque006/l2-bridge-evm#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@typechain/ethers-v5": "^8.0.5",
+    "@typechain/hardhat": "^3.0.0",
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "chai": "^4.3.4",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.7.0",
+    "hardhat-gas-reporter": "^1.0.4",
+    "prettier": "^2.5.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.7.17",
+    "typechain": "^6.0.5",
+    "typescript": "^4.5.2"
+  }
+}
