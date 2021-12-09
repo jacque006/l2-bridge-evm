@@ -4,7 +4,7 @@ pragma abicoder v2;
 
 import "./lib/Types.sol";
 
-contract BridgeDestination {
+contract DestinationBridge {
     // (transferData, transferID) => address owner
     // TODO Type key correctly
     mapping(uint256 => address) public transferOwners;
