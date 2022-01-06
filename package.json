@@ -18,7 +18,13 @@
     "url": "https://github.com/jacque006/l2-bridge-evm/issues"
   },
   "homepage": "https://github.com/jacque006/l2-bridge-evm#readme",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
   "dependencies": {
+    "@chainsafe/persistent-merkle-tree": "^0.3.7",
+    "@chainsafe/ssz": "^0.8.20",
     "@openzeppelin/contracts": "^4.4.1"
   },
   "devDependencies": {
@@ -39,8 +45,6 @@
     "ethers": "^5.5.2",
     "hardhat": "^2.8.0",
     "hardhat-gas-reporter": "^1.0.6",
-    "keccak256": "^1.0.6",
-    "merkletreejs": "^0.2.27",
     "prettier": "^2.5.1",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
     "solhint": "^3.3.6",

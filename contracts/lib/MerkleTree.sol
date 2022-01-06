@@ -1,12 +1,14 @@
 //SPDX-License-Identifier: MIT
 pragma solidity >=0.8.10;
 pragma abicoder v2;
+// TODO debug, remove
+import "hardhat/console.sol";
 
 // Based on https://github.com/ethereum/consensus-specs/blob/dev/solidity_deposit_contract/deposit_contract.sol
 // TODO May want to go deeper on this and try and implement more generic SSZ spec (https://github.com/protolambda/eth2.0-ssz/)
 abstract contract MerkleTree {
     // TODO Do these need to be adjustable?
-    uint256 constant DEPTH = 32;
+    uint256 public constant DEPTH = 32;
     uint256 constant MAX_ITEM_COUNT = 2 ** DEPTH - 1;
 
     bytes32[DEPTH] zeroHashes;

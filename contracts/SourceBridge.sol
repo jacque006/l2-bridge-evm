@@ -10,6 +10,9 @@ import "./lib/MerkleTree.sol";
 import "hardhat/console.sol";
 
 contract SourceBridge is MerkleTree {
+
+    // TODO Need event for transfer initiated
+
     uint256 public immutable contractFeeBasisPoints;
 
     uint256 public nextTransferID = 0;
