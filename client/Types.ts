@@ -5,7 +5,7 @@ import {
   ContainerType,
 } from "@chainsafe/ssz";
 
-const bufferHex = (x: string): Buffer => Buffer.from(x, 'hex');
+const bufferHex = (x: string): Buffer => Buffer.from(x, "hex");
 
 const Uint256Type = new NumberUintType({
   byteLength: 8,
@@ -28,16 +28,14 @@ const TransferSSZ = new ContainerType({
 interface Transfer {
   tokenAddress: ByteVector;
   destination: ByteVector;
-  amount: Number;
-  fee: Number;
-  startTime: Number;
-  feeRampup: Number;
+  amount: number;
+  fee: number;
+  startTime: number;
+  feeRampup: number;
 }
 
 // TODO Figure out ethers interface type.
-const transferToSSZ = (): Transfer => ({
-
-});
+const transferToSSZ = (): Transfer => ({});
 
 const TransferInitiatedSSZ = new ContainerType({
   fields: {
@@ -51,5 +49,5 @@ const TransferInitiatedSSZ = new ContainerType({
 interface TransferInitiatedSSZ {
   transferHash: ByteVector;
   sourceBridge: ByteVector;
-  transferID: Number;
+  transferID: number;
 }
