@@ -5,7 +5,7 @@ import "hardhat-gas-reporter";
 import "solidity-coverage";
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.11",
+  solidity: "0.8.16",
   gasReporter: {
     enabled: true,
   },
