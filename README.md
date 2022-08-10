@@ -8,7 +8,19 @@ Prototype/MVE implementation of https://notes.ethereum.org/@vbuterin/cross_layer
 ## setup
 
 ```sh
-npm i
+npm ci
+```
+
+## build contracts
+
+```sh
+npm run build
+```
+
+## lint
+
+```sh
+npm run lint
 ```
 
 ## test
